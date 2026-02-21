@@ -25,7 +25,7 @@ Counter-Strike 2 shifted movement entirely to a Sub-Tick architecture. Standard 
 
 ## 🚀 Installation & Usage
 
-1. **Download:** Grab the latest `CS2Bhop.exe` from the [Releases](https://github.com/Adiru3/CS2-Auto-Bhop/releases) tab.
+1. **Download:** Grab the latest `CS2Bhop.exe`
 2. **Run:** Open `CS2Bhop.exe`. (The application requires Administrator privileges to inject keyboard hooks reliably).
 3. **Configure:** Check the **"Enable Duck-Jump"** box if you want maximum forward jump distance. Uncheck for standard flat sub-tick jumping.
 4. **Start:** Click `START BHOP`. The script will now listen seamlessly in the background.
@@ -39,16 +39,13 @@ Requires the .NET Framework 4.0 Compiler (`csc.exe`).
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /target:winexe /win32manifest:app.manifest /out:CS2Bhop.exe CS2BhopUI.cs
 ```
 
-## 🌐 Official Website & Web Mini-Game
-Visit our official website to test your raw Bhop reflex skills in an interactive 2D Canvas Mini-Game!
-[CS1337BOYS Official Website](https://adiru3.github.io/CS2-Auto-Bhop/)
-
 ## 🤝 Support
 If this script helped you hit that insane 300-velocity clip, consider dropping a star ⭐ or supporting the development!
 
 [Donate here!](https://adiru3.github.io/Donate/) | [Join our Steam Group!](https://steamcommunity.com/groups/CS1337BOYS)
 
 > **Disclaimer:** This software simulates keyboard strokes via standard `user32.dll` APIs and does not read or inject into CS2 memory (`client.dll`). Use external hardware scripts/macros at your own risk on VAC/FaceIT servers.
+
 
 
 
