@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>CS2 AUTO-B-HOP | The Ultimate Sub-Tick Bypass Movement Engine</title>
+    <meta name="title" content="CS2 AUTO-B-HOP | The Ultimate Sub-Tick Bypass Movement Engine">
+    <meta name="description"
+        content="Download the most scientifically accurate, zero-latency Auto-Bhop & Long-Jump macro for Counter-Strike 2. Perfect duck-jumps, sub-tick bypass, completely free.">
+    <meta name="keywords"
+        content="cs2 bhop, counter-strike 2 bunnyhop, cs2 auto bhop, cs2 long jump macro, duck jump cs2, sub-tick movement cs2, cs1337boys">
+    <meta name="author" content="CS1337BOYS">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adiru3.github.io/CS2-Auto-Bhop/">
+    <meta property="og:title" content="CS2 AUTO-B-HOP | The Ultimate Sub-Tick Bypass">
+    <meta property="og:description"
+        content="Sub-tick movement holding you back? Download the perfect 0.00ms latency Auto-Bhop & Long-Jump engine for CS2.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://adiru3.github.io/CS2-Auto-Bhop/">
+    <meta property="twitter:title" content="CS2 AUTO-B-HOP | The Ultimate Sub-Tick Bypass">
+    <meta property="twitter:description"
+        content="Sub-tick movement holding you back? Download the perfect 0.00ms latency Auto-Bhop engine for CS2.">
+
+    <!-- Schema.org Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CS2 AUTO-B-HOP",
+      "operatingSystem": "Windows 10, Windows 11",
+      "applicationCategory": "GameApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+          "@type": "Organization",
+          "name": "CS1337BOYS"
+      }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&family=Roboto:wght@400;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Background Decorators -->
+    <div class="bg-diagonal stroke-light"></div>
+    <div class="bg-diagonal orange-fill"></div>
+
+    <nav class="navbar">
+        <div class="logo">CS1337<span>BOYS</span></div>
+        <div class="nav-links">
+            <a href="https://github.com/Adiru3/CS2-Auto-Bhop">GitHub</a>
+            <a href="https://adiru3.github.io/Donate/">Donate</a>
+            <a href="https://steamcommunity.com/groups/CS1337BOYS">Steam Group</a>
+        </div>
+    </nav>
+
+    <main class="hero-container">
+        <section class="hero-text">
+            <h1>OUTSMART THE<br><span class="highlight">SUB-TICK</span></h1>
+            <p>The only scientifically accurate, zero-latency Auto-Bhop and perfect Long-Jump engine built natively for
+                Counter-Strike 2. Hit maximum velocity without triggering the spam penalty.</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/CS1337BOYS/Counter-Strike-2-Auto-Bunny-Hopping/releases/download/V1/CS2Bhop.exe"
+                    class="btn-primary">DOWNLOAD EXE</a>
+                <a href="#minigame" class="btn-secondary">PLAY 2D DEMO</a>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat"><span class="orange">0.00</span> MS LATENCY</div>
+                <div class="stat"><span class="orange">15.6</span> MS BYPASS</div>
+                <div class="stat">WINAPI HOOK</div>
+            </div>
+        </section>
+
+        <section class="hero-game" id="minigame">
+            <div class="game-wrapper">
+                <div class="game-header">
+                    <span>CS2 MOVEMENT SIMULATOR</span>
+                    <span class="pulse-dot"></span>
+                </div>
+                <!-- 2D Canvas Target -->
+                <canvas id="bhopCanvas" width="600" height="300"></canvas>
+                <div class="game-controls">
+                    <span><strong>[SPACE]</strong> Bunnyhop</span>
+                    <span><strong>[CTRL]</strong> perfect Duck-Jump (Long Jump)</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="game.js"></script>
+</body>
+
+</html>

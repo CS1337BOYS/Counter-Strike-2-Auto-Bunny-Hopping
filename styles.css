@@ -1,0 +1,268 @@
+:root {
+    --bg-dark: #1e1e1e;
+    --cs-orange: #FF5D00;
+    --cs-orange-dark: #cc4a00;
+    --cs-orange-glow: rgba(255, 93, 0, 0.4);
+    --text-light: #f5f5f5;
+    --text-gray: #a0a0a0;
+    --panel-bg: rgba(25, 25, 25, 0.85);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- CS2 Diagonal Background Shapes --- */
+.bg-diagonal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.stroke-light {
+    left: 15%;
+    width: 25vw;
+    background: rgba(255, 255, 255, 0.02);
+    transform: skewX(-20deg);
+}
+
+.orange-fill {
+    right: -10vw;
+    width: 45vw;
+    background: linear-gradient(135deg, var(--cs-orange) 0%, var(--cs-orange-dark) 100%);
+    transform: skewX(-20deg);
+    box-shadow: -15px 0 50px rgba(0,0,0,0.5);
+}
+
+/* --- Navigation --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Jura', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--cs-orange);
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--cs-orange);
+}
+
+/* --- Hero Section --- */
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5%;
+    gap: 4rem;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-family: 'Jura', sans-serif;
+    font-size: 4.5rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.highlight {
+    color: var(--cs-orange);
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+/* --- Buttons --- */
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 1rem 2.5rem;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-primary {
+    background-color: var(--cs-orange);
+    color: white;
+    box-shadow: 0 4px 15px var(--cs-orange-glow);
+}
+
+.btn-primary:hover {
+    background-color: var(--cs-orange-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px var(--cs-orange-glow);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-light);
+    border: 2px solid var(--text-gray);
+}
+
+.btn-secondary:hover {
+    border-color: var(--cs-orange);
+    color: var(--cs-orange);
+    transform: translateY(-3px);
+}
+
+/* --- Stats Row --- */
+.stats-row {
+    display: flex;
+    gap: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+}
+
+.stat {
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--text-gray);
+}
+
+.stat .orange {
+    color: var(--cs-orange);
+    font-size: 1.2rem;
+}
+
+/* --- Minigame Panel --- */
+.hero-game {
+    flex: 1;
+    max-width: 650px;
+    perspective: 1000px;
+}
+
+.game-wrapper {
+    background: var(--panel-bg);
+    border: 1px solid rgba(255, 93, 0, 0.3);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+    transform: rotateY(-5deg) rotateX(5deg);
+    transition: transform 0.5s ease;
+}
+
+.game-wrapper:hover {
+    transform: rotateY(0deg) rotateX(0deg);
+    border-color: var(--cs-orange);
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--cs-orange);
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #00ff00;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ff00;
+    animation: blink 1.5s infinite;
+}
+
+canvas {
+    background: #111;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    cursor: crosshair;
+}
+
+.game-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-gray);
+    padding: 0 0.5rem;
+}
+
+.game-controls strong {
+    color: var(--text-light);
+    background: rgba(255,255,255,0.1);
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+/* Animations */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column;
+        padding-top: 5rem;
+    }
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    .game-wrapper {
+        transform: none;
+    }
+    .bg-diagonal {
+        display: none;
+    }
+}
