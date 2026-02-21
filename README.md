@@ -4,7 +4,7 @@
   # CS2 AUTO-B-HOP by CS1337BOYS
   **The Most Scientifically Accurate, Sub-Tick Optimized Bunnyhop & Long-Jump Engine for Counter-Strike 2**
 
-  [![Downloads](https://img.shields.io/github/downloads/Adiru3/CS2-Auto-Bhop/total.svg?style=for-the-badge&color=FF5D00)](https://github.com/Adiru3/CS2-Auto-Bhop/releases)
+  [![Downloads](https://img.shields.io/github/downloads/Adiru3/CS2-Auto-Bhop/total.svg?style=for-the-badge&color=FF5D00)](https://github.com/CS1337BOYS/Counter-Strike-2-Auto-Bunny-Hopping/releases/download/V1/CS2Bhop.exe)
   [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge&color=252525)](https://opensource.org/licenses/MIT)
   [![Steam Group](https://img.shields.io/badge/Steam-CS1337BOYS-black?logo=steam&style=for-the-badge)](https://steamcommunity.com/groups/CS1337BOYS)
 </div>
@@ -51,3 +51,4 @@ If this script helped you hit that insane 300-velocity clip, consider dropping a
 [Donate here!](https://adiru3.github.io/Donate/) | [Join our Steam Group!](https://steamcommunity.com/groups/CS1337BOYS)
 
 > **Disclaimer:** This software simulates keyboard strokes via standard `user32.dll` APIs and does not read or inject into CS2 memory (`client.dll`). Use external hardware scripts/macros at your own risk on VAC/FaceIT servers.
+
